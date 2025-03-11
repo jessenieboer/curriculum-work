@@ -1,0 +1,16 @@
+{
+  "exclude": [
+    "**/__pycache__",
+    "**/.direnv",
+    "**/.envrc",
+    "**/.gitconfig.sh",
+    "**/.gitignore",
+    "**/.gitmessage",
+    "**/.project.el",
+    "**/.pytest_cache",
+    "**/pyrightconfig.json",
+    "**/readme.*"
+  ],
+  "reportMissingImports": "error",
+  "reportMissingTypeStubs": false
+}

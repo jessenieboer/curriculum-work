@@ -1,0 +1,14 @@
+**** Topic: Introduction to AI for Learning and Productivity
+- python config in emacs was tricky. i don't know enough about python or how it works behind the scenes. plus it seems complicated in emacs, with a lot of possible configs and packages handling them. currently using PET but don't really understand it.
+- ai could probably teach me the basics of getting python running, and answer specific setup questions with my config
+- i asked grok some python stuff and went on a bit of a rabbit trail that helped me fix my python project template.
+- grok vs python doc observations 
+  - far faster to have the ai search for answers to my questions than me.
+  - i can get specific information on-demand without reading a bunch of irrelevant stuff. however, reading the official docs i did run into more useful, incidental information, which might be good for general learning.
+  - i can ask questions that require other sources (like asking nix-specific python questions); the ai will integrate other sources and be able to answer.
+
+read the following:
+https://acceleratelearning.stanford.edu/story/the-future-is-already-here-ai-and-education-in-2025/
+https://www.forbes.com/sites/garydrenik/2025/03/06/how-ai-search-is-shaping-the-future-of-education-and-research/
+https://www.scientificamerican.com/article/the-ai-future-is-here/
+
