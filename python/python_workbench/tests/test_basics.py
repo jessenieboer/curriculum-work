@@ -12,9 +12,25 @@ import workbench.basics as basics
     (10, 55),
     (20, 6765),
 ])
-def test_fib_loop(n, expected):
-    assert basics.fib_loop(n) == expected
+class TestFib:
+      def test_fib_loop(self, n, expected):
+          assert basics.fib_loop(n) == expected
 
-# def test_fib_rec():
-#     pass
-     
+      def test_fib_rec(self, n, expected):
+          assert basics.fib_rec(n) == expected
+
+@pytest.mark.parametrize("n, expected", [
+    (0, 1),    # Base case
+    (1, 1),    # Base case
+    (2, 2),
+    (3, 6),
+    (4, 24),
+    (5, 120),
+    (10, 3628800)
+])
+class TestFact:
+    def test_fact_loop(self, n, expected):
+        assert basics.fact_loop(n) == expected
+
+    def test_fact_rec(self, n, expected):
+        assert basics.fact_rec(n) == expected
