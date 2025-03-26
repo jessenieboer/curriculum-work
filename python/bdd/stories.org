@@ -1,0 +1,61 @@
+* Captures
+:PROPERTIES:
+:ID:       eba18625-d11c-4409-8af2-186a003e93f7
+:END:
+testcap
+** future my story
+:PROPERTIES:
+:ID: 41f32b01-8b7b-4807-a684-bea5ea09be65
+:CATEGORY: task
+:EFFORT_TYPE: work
+:FREQUENCY: once
+:HAS_DUE_DATE: no
+:EFFORT_AMOUNT: average
+:BUDGET_IMPACT: trivial
+:COMMITMENT: probably
+:HARD_DATE_DEPENDENCY: no
+:SOFT_DATE_DEPENDENCY: no
+:HARD_INTERNAL_DEPENDENCY: no
+:SOFT_INTERNAL_DEPENDENCY: no
+:HARD_EXTERNAL_DEPENDENCY: no
+:SOFT_EXTERNAL_DEPENDENCY: no
+:EFFORT: 0d
+:ESTIMATED_COST: 0
+:ACTUAL_EFFORT: 
+:ACTUAL_COST: 
+:END:
+
+
+
+#+begin_src feature :tangle /features/my_story.feature
+  Feature: my story
+    
+#+end_src
+* future test story 2
+:PROPERTIES:
+:ID: 32b6a1e2-7f04-48aa-bd43-08062b95d41f
+:CATEGORY: task
+:EFFORT_TYPE: work
+:FREQUENCY: once
+:HAS_DUE_DATE: no
+:EFFORT_AMOUNT: average
+:BUDGET_IMPACT: trivial
+:COMMITMENT: probably
+:HARD_DATE_DEPENDENCY: no
+:SOFT_DATE_DEPENDENCY: no
+:HARD_INTERNAL_DEPENDENCY: no
+:SOFT_INTERNAL_DEPENDENCY: no
+:HARD_EXTERNAL_DEPENDENCY: no
+:SOFT_EXTERNAL_DEPENDENCY: no
+:EFFORT: 0d
+:ESTIMATED_COST: 0
+:ACTUAL_EFFORT: 
+:ACTUAL_COST: 
+:END:
+
+
+
+#+begin_src feature :tangle /features/test_story_2.feature
+  Feature: test story 2
+    
+#+end_src

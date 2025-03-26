@@ -28,3 +28,11 @@ def fact_rec(n):
             return 1
         case _:
             return n * fact_rec(n - 1)
+
+
+# def list_notes(notes_file):
+#     """List notes from a file."""
+#     # empty file: empty list
+#     # file with one note: list with one note
+#     # file with multiple notes: list with multiple notes
+#     pass
