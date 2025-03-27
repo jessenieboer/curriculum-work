@@ -17,7 +17,8 @@
 ""
 "")
 
-#+begin_src feature :tangle /features/%(replace-regexp-in-string " " "_" "${title}").feature
+
+#+begin_src feature :tangle features/%(replace-regexp-in-string " " "_" "${title}").feature
   Feature: ${title}
     %?
 #+end_src

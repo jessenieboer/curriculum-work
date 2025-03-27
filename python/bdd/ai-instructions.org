@@ -1,0 +1,60 @@
+* Introduction
+This document contains instructions for an ai agent to assist in my workflow, which is oriented around behavior-driven development. Each  headline other than this one contains instructions for how to help with a specific task.
+
+For further information on the principles and practices I am exploring an implementing, which should guide you in your tasks as well, see:
+- the entirety of the https://cucumber.io/ site
+
+* Generating stories
+I will provide you with "captures" - text that contains unstructured descriptions of desired system behavior. From these descriptions, generate user stories in the following format (enclosed in quotes):
+"* future <story title>
+:PROPERTIES:
+:ID: <id>
+:CATEGORY: task
+:EFFORT_TYPE: work
+:FREQUENCY: once
+:HAS_DUE_DATE: no
+:EFFORT_AMOUNT: average
+:BUDGET_IMPACT: trivial
+:COMMITMENT: probably
+:HARD_DATE_DEPENDENCY: no
+:SOFT_DATE_DEPENDENCY: no
+:HARD_INTERNAL_DEPENDENCY: no
+:SOFT_INTERNAL_DEPENDENCY: no
+:HARD_EXTERNAL_DEPENDENCY: no
+:SOFT_EXTERNAL_DEPENDENCY: no
+:EFFORT: 0d
+:ESTIMATED_COST: 0
+:ACTUAL_EFFORT: 
+:ACTUAL_COST: 
+:END:
+
+#+begin_src feature :tangle features/<story_title_with_underscores>.feature
+  Feature: <story title>
+    <story content>
+#+end_src"
+
+Stories should follow the general pattern "As a <role>, I want <feature>, so that <benefit>".
+
+Each story should be centered around a single desired feature.
+
+Generated stories should reproduce the template verbatim except for the enclosing quotation marks and the content marked by angle brackets:
+- <story title> should be replaced with a succinct title that describes the story's feature
+- <id> should be replaced by a new globally unique ID that matches the format of this example: 91820a49-8db9-4908-af33-7188be99d57a
+- <story_title_with_underscores> should be the same story title as in the headline, but with spaces replaced by underscores
+- <story content> should be the text of the story according to the general pattern "As a <role>, I want <feature>, so that <benefit>", although it could be expanded as necessary. Each phrase should be on a different line.
+
+The generated stories should be presented in one org-mode code block (so I can easily copy/paste).
+
+* Generating scenarios
+:PROPERTIES:
+:ID:       4b48a4b7-5602-473a-9d60-13a5e89a985f
+:END:
+I will provide you with org headlines and content, which I refer to collectively as "stories". Notice that each headline represents a user story. Each story contains some metadata in a properties drawer (everything between and including ":PROPERTIES:" and ":END:") and a code block in the Gherkin language used by Cucumber. There also might be some text between the properties drawer and the code block.
+
+Generate Scenarios in Gherkin for each story: concrete examples of the story's desired new functionality, used by humans to explore, discover and agree on the details of what's expected to be done for the story. Generate as many scenarios as seems appropriate to fully test and implement the story. Take note of any descriptive text that appears before the code block, as it might have ideas or further instructions for scenario generation for that story. You can ignore the properties drawer.
+
+For further reference, see:
+- https://cucumber.io/docs/gherkin/reference
+- https://cucumber.io/docs/bdd/better-gherkin
+
+* Generating tests

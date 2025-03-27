@@ -2,7 +2,9 @@
 		:roam-files ("~/kingdom/projects/solo-projects/professional-projects/curriculum-work/python/bdd/stories.org")
 		:roam-templates (("s" "Raw capture" plain
 				  "${title}"
-				  :target (file+head "~/kingdom/projects/solo-projects/professional-projects/curriculum-work/python/bdd/stories.org" "Captures"))
+				  :target (file "~/kingdom/projects/solo-projects/professional-projects/curriculum-work/python/bdd/captures.org")
+				  :empty-lines 1
+				  :immediate-finish)
 				 ("e" "Story" entry
 				  (file "~/kingdom/projects/solo-projects/professional-projects/curriculum-work/python/bdd/story-template.org")
 				  :target (file "~/kingdom/projects/solo-projects/professional-projects/curriculum-work/python/bdd/stories.org")))
