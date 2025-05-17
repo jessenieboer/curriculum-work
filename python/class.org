@@ -1,3 +1,0 @@
-* Topic: Python Basics
-* Topic: Testing and Debugging
-going down a bdd path instead of plain tdd

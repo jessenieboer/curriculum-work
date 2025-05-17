@@ -1,0 +1,3 @@
+* Topic: Python Basics
+* Topic: Testing and Debugging
+- I took a major detour to incorporate ai-assisted bdd techniques into my workflow

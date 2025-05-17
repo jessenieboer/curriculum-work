@@ -1,4 +1,4 @@
-**** Topic: Introduction to AI for Learning and Productivity
+* Topic: Introduction to AI for Learning and Productivity
 - python config in emacs was tricky. i don't know enough about python or how it works behind the scenes. plus it seems complicated in emacs, with a lot of possible configs and packages handling them. currently using PET but don't really understand it.
 - ai could probably teach me the basics of getting python running, and answer specific setup questions with my config
 - i asked grok some python stuff and went on a bit of a rabbit trail that helped me fix my python project template.
