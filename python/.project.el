@@ -1,4 +1,4 @@
-`(:project-tags ("python_bdd_project_template")
+`(:project-tags ("curriculum_work_python")
 		:roam-files  ("~/kingdom/projects/solo-projects/professional-projects/repo-templates/python-bdd-project-template/bdd/stories.org")
 		:roam-templates (("s" "Idea" plain
 				  "${title}"
@@ -110,4 +110,22 @@
 				    (org-agenda-overriding-header "What should I focus on today?")
 				    (org-agenda-sorting-strategy '((tags user-defined-up tag-up alpha-up)))
 				    (org-agenda-view-columns-initially t)
-				    (org-overriding-columns-format "%7TODO(Timing) %40ITEM(Item) %8EFFORT_AMOUNT(Effort) %DEADLINE(Due date)")))))
+				    (org-overriding-columns-format "%7TODO(Timing) %40ITEM(Item) %8EFFORT_AMOUNT(Effort) %DEADLINE(Due date)")))
+
+				  ("tb" "Team: What is done with? (Activity)" tags "TODO=\"past\""
+				   ((org-agenda-cmp-user-defined 'my-org-cmp-effort-amount)
+				    (org-agenda-overriding-header "What is done with?")
+				    (org-agenda-skip-function-global nil)
+				    (org-agenda-sorting-strategy '((tags user-defined-up tag-up alpha-up)))
+				    (org-agenda-view-columns-initially t)
+				    (org-overriding-columns-format "%7TODO(Timing) %40ITEM(Item) %8EFFORT_AMOUNT(Effort) %DEADLINE(Due date) %15TAGS(Project)")
+				    (org-super-agenda-groups 
+				     '((:name "Tasks"
+					      :category "task"
+					      :order 1)
+				       (:name "Routines"
+					      :category "routine"
+					      :order 2)
+				       (:name "Practices"
+					      :category "practice"
+					      :order 3)))))))
