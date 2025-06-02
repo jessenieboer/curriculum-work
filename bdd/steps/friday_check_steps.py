@@ -1,0 +1,20 @@
+# [[file:../steps.org::*Steps][Steps:1]]
+from pytest_bdd import given, when, then, scenarios, parsers
+from friday_checker_pkg import check_friday
+
+scenarios("check_if_a_day_is_friday.feature") 
+
+@given(parsers.parse("the day is \"{day}\""), target_fixture="current_day")
+def given_the_day_is(day:str):
+    return day
+
+@when("I check if it's Friday", target_fixture="actual_result")
+def when_i_check_if_its_friday(current_day:str):
+    return check_friday.check_if_friday(current_day)
+
+@then(parsers.parse("the result should be \"{expected_result}\""))
+def then_the_result_should_be(expected_result:str, actual_result:str):
+    assert expected_result == actual_result
+# Steps:1 ends here
+
+
