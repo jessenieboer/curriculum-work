@@ -1,0 +1,85 @@
+* past [#A] Check if a day is Friday
+:PROPERTIES:
+:ID: 0837db35-07cf-466b-b775-a2ef665e8901
+:CATEGORY: task
+:EFFORT_TYPE: work
+:FREQUENCY: once
+:HAS_DUE_DATE: no
+:EFFORT_AMOUNT: average
+:BUDGET_IMPACT: trivial
+:COMMITMENT: yes
+:HARD_DATE_DEPENDENCY: no
+:SOFT_DATE_DEPENDENCY: no
+:HARD_INTERNAL_DEPENDENCY: no
+:SOFT_INTERNAL_DEPENDENCY: no
+:HARD_EXTERNAL_DEPENDENCY: no
+:SOFT_EXTERNAL_DEPENDENCY: no
+:EFFORT: 0d
+:ESTIMATED_COST: 0
+:ACTUAL_EFFORT: 
+:ACTUAL_COST: 
+:END:
+notes:
+
+#+begin_src feature :tangle features/check_if_a_day_is_friday.feature :comments link
+  Feature: Check if a day is Friday
+    As a developer,
+    I want a function that can determine if a given day is Friday,
+    so that I can confirm my BDD setup is working.
+
+    Scenario Outline: Check if a valid day is Friday
+      Given the day is "<day>"
+      When I check if it's Friday
+      Then the result should be "<result>"
+
+      Examples:
+	| day       | result |
+	| Monday    | No     |
+	| Tuesday   | No     |
+	| Wednesday | No     |
+	| Thursday  | No     |
+	| Friday    | Yes    |
+	| Saturday  | No     |
+	| Sunday    | No     |
+
+    Scenario: Check with lowercase Friday
+      Given the day is "friday"
+      When I check if it's Friday
+      Then the result should be "Yes"
+
+
+    Scenario: Check with uppercase Monday
+      Given the day is "MONDAY"
+      When I check if it's Friday
+      Then the result should be "No"
+
+
+    Scenario: Check with Friday with leading space
+      Given the day is " Friday"
+      When I check if it's Friday
+      Then the result should be "Yes"
+
+
+    Scenario: Check with Friday with trailing space
+      Given the day is "Friday "
+      When I check if it's Friday
+      Then the result should be "Yes"
+
+
+    Scenario: Check with an invalid day
+      Given the day is "Funday"
+      When I check if it's Friday
+      Then the result should be "Invalid day"
+
+
+    Scenario: Check with an empty string
+      Given the day is """"
+      When I check if it's Friday
+      Then the result should be "Invalid day"
+
+
+    Scenario: Check with abbreviation
+      Given the day is "Fri"
+      When I check if it's Friday
+      Then the result should be "Invalid day"
+#+end_src
