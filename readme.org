@@ -1,4 +1,4 @@
-#+html:<h1 align="center">Repo title</h1>
+#+html:<h1 align="center">Curriculum Work</h1>
 * Table of Contents
 - [[#what][What]]
   - [[#features][Features]]
@@ -17,13 +17,63 @@
 - [[#by-whom][By Whom]]
 
 * What
+My progress on my personalized curriculum
 ** Features
+- Assignments from my curriculum
+- Notes as I progress
+- Progress tracking
 * Why
+I need place to do the work, and it seems good to track my progress.
 * For Whom
+Myself and I suppose anyone who wants to look in on me.
 * How
 ** Requirements
 ** Installation
 ** Use
+See subdirectories for class work.
+
+Current progress:
+- [ ] 1. Python Basics
+- [ ] 2. Prolog Syntax and Logic Programming
+- [ ] 3. Emacs Lisp Basics
+- [ ] 4. Introduction to Knowledge Management
+- [ ] 5. Knowledge Representation with Prolog
+- [ ] 6. Ontologies and Semantic Web
+- [ ] 7. Knowledge Graphs
+- [ ] 8. RDF and SPARQL
+- [ ] 9. Data Structures and Algorithms (Python)
+- [ ] 10. Object-Oriented Programming (Python)
+- [ ] 11. Functional Programming Techniques (Python)
+- [ ] 12. Testing and Debugging (Python)
+- [ ] 13. Interfacing with Prolog (Python)
+- [ ] 14. Introduction to Web Architecture
+- [ ] 15. HTTP and RESTful APIs
+- [ ] 16. Web Development with Flask/Django
+- [ ] 17. HTML Fundamentals
+- [ ] 18. CSS Styling and Layout
+- [ ] 19. Responsive Design
+- [ ] 20. CSS Frameworks (e.g., Bootstrap)
+- [ ] 21. JavaScript Basics
+- [ ] 22. DOM Manipulation
+- [ ] 23. Asynchronous Programming (JavaScript)
+- [ ] 24. Front-End Frameworks (e.g., React)
+- [ ] 25. PureScript for Web Frontends
+- [ ] 26. Customizing Emacs with Elisp
+- [ ] 27. Writing Emacs Packages
+- [ ] 28. Testing and Debugging Elisp Code
+- [ ] 29. Emacs Package Structure
+- [ ] 30. Using ERT for Testing
+- [ ] 31. Publishing Packages to MELPA
+- [ ] 32. Best Practices for Emacs Packages
+- [ ] 33. Nix Basics and Expressions
+- [ ] 34. Creating Nix Packages
+- [ ] 35. Managing Development Environments
+- [ ] 36. NixOS Configuration
+- [ ] 37. Deployment and Hosting
+- [ ] 38. Data Science and Machine Learning (Python)
+- [ ] 39. Definite Clause Grammars (DCGs) (Prolog)
+- [ ] 40. Prolog for DSL Development
+
 *** License
 ** Development
 *** Process

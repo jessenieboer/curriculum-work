@@ -1,6 +1,0 @@
-need a function to take a day and tell you if it's friday so i can confirm i have a working bdd setup
-
-it should just take the name of a day as text
-
-
-
