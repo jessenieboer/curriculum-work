@@ -1,15 +1,14 @@
-`(:project-tags ("my_project_name")
-		:roam-files ("/path/to/this/dir/project/bdd/stories.org")
-		:roam-templates (("s" "Idea" plain
-				  "${title}"
-				  :target (file "/path/to/this/dir/bdd/ideas.txt")
-				  :empty-lines 1
-				  :immediate-finish)
-				 ("e" "Story" entry
-				  (file "/path/to/this/dir/bdd/story-template.org")
-				  :target (file "/path/to/this/dir/bdd/stories.org")))
-		:agenda-commands (("ln" "Stakeholders: Must this item be finished by a certain date, or else it will fail? (Basics)"
-		   tags
+`(:project-tags ("<project_name>")
+                :roam-files ("<path to project dir>/bdd/user-stories.org")
+                :roam-templates (("s" "Idea" plain
+  				"${title}"
+  				:target (file "<path to project dir>/bdd/ideas.txt")
+  				:empty-lines 1
+  				:immediate-finish)
+                                 ("e" "User Story" entry
+  				(file "<path to project dir>/bdd/user-story-template.org")
+  				:target (file "<path to project dir>/bdd/user-stories.org")))
+		:agenda-commands (("ln" "Stakeholders: Must this item be finished by a certain date, or else it will fail? (Basics)" tags "TODO<>\"past\"&HAS_DUE_DATE=\"\"
 		   ((org-agenda-hide-tags-regexp nil)
 		    (org-agenda-overriding-header "Must this item be finished by a certain date, or else it will fail?")
 		    (org-agenda-sorting-strategy '((tags category-up alpha-up)))

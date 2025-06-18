@@ -22,7 +22,13 @@
 * How
 ** Requirements
 ** Installation
-clone git@github.com:jessenieboer/python-project-template.git
+for an independent project, create repo from template git@github.com:jessenieboer/python-bdd-project-template.git
+
+to add as a subdirectory to an existing project, use git subtree:
+git subtree add --prefix=subdir_name git@github.com:jessenieboer/python-project-template.git master --squash
+
+for integrating template changes: git subtree pull --prefix=subdir_name git@github.com:jessenieboer/python-project-template.git master --squash
+
 ** Use
 
 run ". gitconfig" from the project root directory
@@ -60,7 +66,7 @@ line 1: --color=yes: command not found and restarting emacs fixed it. also closi
 had a module not found problem: not sure exactly how it got solved, maybe 
 https://www.geeksforgeeks.org/how-to-fix-the-module-not-found-error/. seems that restarting emacs helps
 
-i had an issue where lsp headerline breadcrumbs were showing an import resolution issue (although the code worked fine). i deleted "/path/to/your/custom/location/.lsp-session-v1" and next time i opened the project emacs prompted me for something about to project folder "hello.py is not part of any project". i imported the project root and then it was fixed. before i did the import, lsp-workspace-root returned nil, afterward it returned the correct directory path. seems you can use lsp-workspace-remove-all-folders rather than deleting the session file? long story short, use the lsp-workspace commands or look a the session file when weird resolution stuff is happening
+i had an issue where lsp headerline breadcrumbs were showing an import resolution issue (although the code worked fine). i deleted "/path/to/your/custom/location/.lsp-session-v1" and next time i opened the project emacs prompted me for something about to project folder "hello.py is not part of any project". i imported the project root and then it was fixed. before i did the import, lsp-workspace-root returned nil, afterward it returned the correct directory path. seems you can use lsp-workspace-remove-all-folders rather than deleting the session file? *long story short, use the lsp-workspace commands or look a the session file when weird resolution stuff is happening*
 *** License
 ** Development
 *** Process

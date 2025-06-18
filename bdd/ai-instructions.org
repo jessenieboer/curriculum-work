@@ -122,11 +122,14 @@ If, according to the current organizational scheme, a new step definition belong
 - Do not use the same name for a step argument and a fixture, as this can be confusing.
 - For Then steps, make sure that the names of the step arguments that represent expected results are prefixed with "expected_" and that the names of step arguments that represent actual results are prefixed with "actual_". In method signatures, prefer to order step arguments for expected results first, and step arguments for actual results next.
 - When a step parameter in the feature file is delimited by quotation marks, make sure the corresponding Step Definition accounts for those quotation marks. For example, the Gherkin step 'Given the day is "<day>"' should result in the code 'parsers.parse("the day is \"{day}\"")' within the corresponding @given decorator.
+- When using an empty string as a step parameter in a feature file, make sure the string is explicitly represented by ""
 - Avoid using the @scenario decorator if possible; all logic should be inside Given/When/Then steps, because this is recommended in the pytest-bdd documentation.
 - Use the scenarios decorator after the import statement to bind the step file to the associated feature file, for example: scenarios("my_feature_name.feature"). Assume that python knows where the features directory is, so just use the name of the file itself without a directory path.
 - For step names that are not identical but mean the same thing and need identical Step Definition logic, create one step definiton and decorate it with multiple step aliases.
 - File and directory titles should use underscores as spaces (rather than dashes).
 - File extensions should be ".py".
-- Generate test logic, but comment it out and end each Step Definition with "pass", unless it's a very simple function. This is so that I can uncomment and implement the step definitions one-by-one.
+- Generate test logic, but comment it out and end each Step Definition with "pass", unless it's a very simple function. This is so that I can uncomment and implement the Step Definitions one-by-one.
+- Do not put docstrings or TODO comments in Step Definitions.
   
 For further reference, see all content on the pytest-bdd site: https://pypi.org/project/pytest-bdd/
+
