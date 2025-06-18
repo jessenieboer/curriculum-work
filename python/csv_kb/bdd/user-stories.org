@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       a62c8d32-697e-492b-8e7b-632b4af1c1a2
+:END:
 * now [#A] Determine if a day is Friday
 :PROPERTIES:
 :ID: >id<
@@ -23,3 +26,4 @@
 As a developer,
 I want to create a simple function that takes a day as text and returns whether it's Friday,
 so that I can use it to confirm my BDD tool and workflow setup is operating properly.
+
