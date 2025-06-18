@@ -1,0 +1,25 @@
+* now [#A] Determine if a day is Friday
+:PROPERTIES:
+:ID: >id<
+:CATEGORY: task
+:EFFORT_TYPE: work
+:FREQUENCY: once
+:HAS_DUE_DATE: no
+:EFFORT_AMOUNT: less
+:BUDGET_IMPACT: trivial
+:COMMITMENT: yes
+:HARD_DATE_DEPENDENCY: no
+:SOFT_DATE_DEPENDENCY: no
+:HARD_INTERNAL_DEPENDENCY: no
+:SOFT_INTERNAL_DEPENDENCY: no
+:HARD_EXTERNAL_DEPENDENCY: no
+:SOFT_EXTERNAL_DEPENDENCY: no
+:EFFORT: 0d
+:ESTIMATED_COST: 0
+:ACTUAL_EFFORT: 
+:ACTUAL_COST: 
+:END:
+
+As a developer,
+I want to create a simple function that takes a day as text and returns whether it's Friday,
+so that I can use it to confirm my BDD tool and workflow setup is operating properly.
