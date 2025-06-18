@@ -28,9 +28,13 @@ for an independent project, create repo from git@github.com:jessenieboer/python-
 
 to add as a subdirectory to an existing project, use git subtree:
 git subtree add --prefix=subdir_name git@github.com:jessenieboer/python-bdd-project-template.git master --squash
+then delete gitconfig.sh in the subdirectory (it's not needed and shouldn't be run)
+
 
 for integrating template changes: git subtree pull --prefix=subdir_name git@github.com:jessenieboer/python-bdd-project-template.git master --squash
 
+*** troubleshooting
+- make sure step definition files do not get collected in pytest.ini. this might be happening if your step definitions aren't running with the correct context and you are seeing "fixture not found" errors for step arguments
 
 *** License
 ** Development
