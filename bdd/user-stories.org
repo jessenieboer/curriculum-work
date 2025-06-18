@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:>id<
+:END:
 * now [#A] Determine if a day is Friday
 :PROPERTIES:
 :ID: >id<

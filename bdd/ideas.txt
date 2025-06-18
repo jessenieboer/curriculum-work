@@ -1,8 +1,9 @@
+:PROPERTIES:
+:ID:>id<
+:END:
 i need to confirm my bdd tool and workflow setup is operating properly, so i just need to create a simple function from the python tutorial.
 
 it should just take the name of a day as text and return whether or not it's Friday
 
 role = developer
-
-
 
